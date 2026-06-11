@@ -4,10 +4,9 @@ const axios = require("axios");
 const app = express();
 app.use(express.json());
 
-const TOKEN = "EAALjX4ZCclA4BRvI9QApIwvjCa1BSkPx8aZAbqLJzcExoN3tsBMZC0k8iPhJ4PKoEpkNBZA9ahQVVqzDC0JwO2yG59sTLbUu6oy6iNx9o8qfAuyHozZBBUdrjjobcqgQRBGw2ZAh9TcZBZCMz7cla7h9gu81h53FE7HmDjSoxSLyZAsFSZBYdOoLDhkeYredfc02Uz91yZBKtM2cFwrvixXZC2eKMW1nInIBfDfxEP5okhEOMZBEllCelZBN0PI8CdYW5aRZB2CrHMqkV06U7DfpHBj54mspJPRAAZDZD";
-const PHONE_NUMBER_ID = "1207792802408646";
-const VERIFY_TOKEN = "nexo123";
-
+const TOKEN = process.env.TOKEN;
+const PHONE_NUMBER_ID = process.env.PHONE_NUMBER_ID;
+const VERIFY_TOKEN = process.env.VERIFY_TOKEN;
 const respuestas = {
   hola: "Hola 👋 Bienvenido a NEXO Studio. Creamos páginas web profesionales con asistentes automatizados.",
   precio: "Nuestros planes empiezan desde RD$5,000. El precio depende del tipo de página.",
